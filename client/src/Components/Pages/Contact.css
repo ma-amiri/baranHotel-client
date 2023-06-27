@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #010712;
+    --secondary-color: #818386;
+    --bg-color: #FCFDFD;
+    --button-color: #3B3636;
+    --h1-color: #3F444C;
+  }
+  
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+  }
+
+  label, .description {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    /* margin-top: 5vh;*/
+  }
+  
+  form {
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  
+
+  .borderless-input {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom:1px solid #757575;
+  }
+  .contactinput {
+    /* color: var(--primary-color); */
+    font-weight: 500;
+    background: var(--bg-color);
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  .contactinput {
+    resize: none;
+  }
+  
+  Button {
+    text-transform: uppercase;
+    font-weight: 300;
+    background: var(--button-color);
+    color: var(--bg-color);
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+   .input:hover, Button:hover {
+    opacity: 0.5;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }
+ .description {
+      margin-left: 1.25rem;
+    }
+
+  .slider {
+    background-color: #fff;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+
+  .input:checked +  {
+    background-color: var(--button-color);
+  }
+  
+  .input:checked +  {
+    transform: translateX(26px);
+  }
+ 
+  
+  #error, #success-msg {
+    width: 40vw;
+    margin: 0.125rem 0;
+    color: var(--secondary-color);
+    }
+ 
+  
+    #success-msg {
+    transition-delay: 3s;
+    }
+    .left-site{
+        margin-bottom: "45px";
+    }
+   .right-col{
+    padding-top: 25vh;
+   }
